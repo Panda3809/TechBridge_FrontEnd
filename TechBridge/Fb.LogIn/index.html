@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Log in Page</title>
+</head>
+
+<body>
+
+    <!-- Where the magic happens -->
+
+    <div class="container">
+        <div class="head">
+            <h1>Create a new account</h1>
+            <p>It's quick and easy</p><br><hr>
+        </div>
+
+        <!-- First name & surname -->
+
+        <form class="names">
+            
+            <input type="text" name="first name" id="name" placeholder="First name" required>
+            <input type="text" name="first name" id="name" placeholder="Surname" required>
+        </form>
+
+        <!-- Date of Birth and gender -->
+
+        <form class="details">
+
+            <label for="dateOfBirth" class="dateOfBirth">Date of birth <span class="special">?</span></label><br>
+            <select id="day" name="day" class="dob">
+                <option value="17">17</option>
+            </select>
+            <select id="month" name="month" class="dob">
+                <option value="Oct">Oct</option>
+            </select>
+            <select id="year" name="year" class="dob">
+                <option value="2024">2024</option>
+            </select>
+
+            <div class="gender">
+                <label>Gender <span class="special">?</span></label>
+                <div class="specs">
+                    <div class="specs1">
+                        <label for="gender">Female</label>
+                        <input type="radio" name="female" value="female" id="gender">
+                    </div>
+
+                    <div class="spec2">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="male" value="male" id="gender">
+                    </div>
+
+                    <div class="spec3">
+                        <label for="gender">Custom</label>
+                        <input type="radio" name="custom" value="custom" id="gender">
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </form>
+
+        <div class="others">
+            <input type="numbers" type="email" placeholder="Mobile number and email"><br>
+            <input type="password" type="text" placeholder="New Password">
+        </div>
+
+        <div class="write">
+            <p>People who use our service have uploadedyour contact information to Facebook. <a href="#">Learn more.</a><br>
+            By clicking Sign Up, you agree to our <a href="#">Terms, Privacy Policy and Cookies Policy.</a> You may receive SMS notification from us and can opt out at any time.</p>
+        </div>
+
+        <div class="btn">
+            <h3><a href="#">Sign up</a></h3>
+            <h4><a href="#">Already have an account ??</a></h4>
+        </div>
+        
+    </div>
+
+</body>
+</html>

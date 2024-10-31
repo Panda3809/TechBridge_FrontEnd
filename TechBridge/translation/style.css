@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+.box{
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    translate: 100px 100px;
+    transition: ease-in 5s;
+    transform: rotate(30deg);
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+}
+.contain{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 100px;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.details{
+    border: 10px solid green;
+    padding: 50px;
+    border-style: dotted;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: gold;
+    justify-content: center;
+    background-color: red;
+}
+.details h1{
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
