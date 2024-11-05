@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Sana Serif';
+}
+body{
+    background-color: #fff;
+}
+.header{
+    display: flexbox;
+}
+.header .big{
+    display: flex;
+}
+.header .big a img{
+    width: 200vh;
+}
+.header .under-big{
+    display: flex;
+    background-color: #fff;
+}
+.header .under-big img{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.logo{
+    position: sticky;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: #ed017f;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    color: #fff;
+    gap: 30px;
+}
+.logo img{
+    padding: 5px;
+    margin-top: -9px;
+    margin-left: 100px;
+    width: 100px;
+    height: 40px;
+}
+.logo a{
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.search{
+    display: flex;
+    color: black;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.search input{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 2px 250px 2px 5px;
+}
+.search p{
+    color: #fff;
+    margin-top: -1px;
+    padding: 10px;
+    border: 2px solid transparent;
+    background-color: #fba100;
+    border-radius: 5px;
+}
+.logo .cart{
+    background-color: #33b27b;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.categories{
+    display: flex;
+    background-color: #94004f;
+    gap: 50px;
+    height: 50px;
+}
+.categories a{
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+}
+.categories a p:hover{
+    color: #000;
+    border: 2px solid transparent;
+    background: #fff;
+    padding: 5px 20px;
+}
