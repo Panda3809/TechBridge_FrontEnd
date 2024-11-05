@@ -5,7 +5,7 @@
     font-family: 'Poppins', 'Sana Serif';
 }
 body{
-    background-color: #fff;
+    background-color: #000;
 }
 .header{
     display: flexbox;
@@ -63,7 +63,7 @@ body{
 .search input{
     border: 2px solid transparent;
     border-radius: 5px;
-    padding: 2px 250px 2px 5px;
+    padding: 2px 300px 2px 5px;
 }
 .search p{
     color: #fff;
