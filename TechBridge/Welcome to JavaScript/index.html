@@ -46,11 +46,25 @@
     // console.log(""); // Blank line for spacing between tables
 //}
 
-
-
+function switchAlphabet(input) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const reversedAlphabet = 'zyxwvutsrqponmlkjihgfedcba';
     
+    input = input.toLowerCase();
+    let result = '';
+    for (let char of input) {
+        if (alphabet.includes(char)) {
+            const index = alphabet.indexOf(char);
+            result += reversedAlphabet[index];
+        } else {
+            result += char;
+        }
+    }
 
-    
+    return result;
+}
+console.log(switchAlphabet("how are you"));
+
 
     </script>
 </body>
