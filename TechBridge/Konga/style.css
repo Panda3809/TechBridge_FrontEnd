@@ -5,7 +5,8 @@
     font-family: 'Poppins', 'Sana Serif';
 }
 body{
-    background-color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 .header{
@@ -15,23 +16,24 @@ body{
     display: flex;
 }
 .header .big a img{
-    width: 200vh;
-    height: 60px;
+    width: 100rem;
+    height: 50px;
 }
 .header .under-big{
     display: flex;
     background-color: #fff;
-    height: 60px;
+    height: 50px;
 }
 .header .under-big img{
+    margin-top: -20px;
     display: flex;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
 }
 
 .logo{
-    position: sticky;
-    padding: 20px;
+    /* position: sticky; */
+    padding: 20px 10px;
     font-size: 15px;
     font-weight: 100;
     background-color: #ed017f;
@@ -44,9 +46,9 @@ body{
 .logo img{
     padding: 5px;
     margin-top: -13px;
-    margin-left: 80px;
-    width: 100px;
-    height: 50px;
+    margin-left: 20px;
+    width: 125px;
+    height: 40px;
 }
 .logo a{
     margin-top: 15px;
@@ -66,7 +68,7 @@ body{
 .search input{
     border: 2px solid transparent;
     border-radius: 5px;
-    padding: 2px 300px 2px 5px;
+    padding: 2px 350px 2px 5px;
 }
 .search p{
     color: #fff;
@@ -97,8 +99,9 @@ body{
 .categories a p:hover{
     color: #000;
     border: 2px solid transparent;
-    background: #fff;
+    background-color: #fff;
     padding: 5px 20px;
+    text-decoration: none;
 }
 
 /* .slider-frame{
@@ -162,12 +165,141 @@ body{
     float: left;
 } */
 
+
 .banner-frame{
+    padding: 20px;
     margin: 50px;
+    width: 100%;
+    height: 70%;
+    display: flex;
 }
 .banner-img{
-    height: 100px;
+    width: 60%;
+}
+.banner-img img{
+    width: 50rem;
+    height: 300px;
 }
 .banner-side{
-    
+    float: left;
+}
+.banner-side img{
+    margin-left: 20px;
+    height: 150px;
+    width: 200px;
+}
+.others{
+    margin: 80px;
+    margin-top: -80px;
+    gap: 30px;
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: rgba(26, 25, 25, 0.2);
+}
+.others a{
+    text-decoration: none;
+    color: #94004f;
+}
+.others i{
+    display: flex;
+    border: 2px solid transparent;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 20px;
+}
+.others p{
+    color: #000;
+    font-size: 15px;
+}
+.newSection{
+    margin-top: -10px;
+    background-color: #94004f;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.newSection h1{
+    margin: 10px;
+    font-size: x-large;
+    gap: 20px;
+}
+.newSection a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+}
+.product{
+    background-color: #fff;
+    display: flex;
+}
+/* .product1 {
+    margin: 20px;
+    padding: 10px 50px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+}
+.product1 h4{
+   font-size: 20px;
+   font-weight: 100; 
+   margin-left: 100px;
+}
+.product1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.product1 h2{
+    margin-left: 120px;
+    margin-top: -50px;
+} */
+
+.product{
+    background-color: #fff;
+    display: flex;
+}
+.product-border{
+    margin: 20px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+}
+.product-border img{
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+.price-container{
+    margin: 10px;
+}
+.starlink{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+.new-price{
+    font-size: 24px;
+    font-weight: bold;
+}
+.old-price{
+    text-decoration: line-through;
+    font-size: #666;
+}
+.discount{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #8b6161;
+    color: red;
+}
+.save-text{
+    color: green;
+    font-size: 15px;
+    font-weight: 900;
 }
