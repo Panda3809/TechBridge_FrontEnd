@@ -80,3 +80,8 @@ req.send()
 
 req.responseType = "json"
 req.onload = () => console.log(req.response.fact);
+
+getFacts
+.then(result => result.data)
+
+.then(result=>console.log(result)).catch(error=>console.log())
