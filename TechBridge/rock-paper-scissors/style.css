@@ -23,7 +23,7 @@ header h1{
 	width: 100%;
 	box-sizing: border-box;
 	padding: 30px;
-	background-color: #2C3E50;
+	background-color: #3e4433;
 }
 .score-container{
 	position: relative;
@@ -47,7 +47,7 @@ header h1{
 	width: 40px;
 	height: 15px;
 	font-size: 10px;
-	padding: 2px 10px;
+	padding: 10px;
 	box-sizing: border-box;
 }
 .com{
@@ -59,7 +59,7 @@ header h1{
 	width: 40px;
 	height: 15px;
 	font-size: 10px;
-	padding: 2px 10px;
+	padding: 10px;
 	box-sizing: border-box;
 }
 .buttons{
@@ -154,6 +154,7 @@ header h1{
 	text-align: center;
 }
 .who{
+    padding: 10px;
 	position: absolute;
 	bottom: 5%;
 	left: 50%;
@@ -165,7 +166,7 @@ header h1{
 	width: 70px;
 	height: 70px;
     margin: 5px;
-    border: 3px solid green;
+    border: 3px solid transparent;
     box-shadow: 0 0 10px green;
     border-radius: 50%;
     color: #34495e;
