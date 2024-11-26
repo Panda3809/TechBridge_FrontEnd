@@ -7,25 +7,28 @@
 }
 body{
     background-color: #000;
+    max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-.header{
+.complete{
     display: flexbox;
+    width: 100%;
+    height: 100%;
 }
-.header .big{
+.complete .big{
     display: flex;
 }
-.header .big a img{
+.complete .big a img{
     width: 100rem;
     height: 50px;
 }
-.header .under-big{
+.complete .under-big{
     display: flex;
     background-color: #fff;
     height: 50px;
 }
-.header .under-big img{
+.complete .under-big img{
     margin-top: -20px;
     display: flex;
     padding: 30px;
@@ -37,7 +40,7 @@ body{
     padding: 20px 10px;
     font-size: 15px;
     font-weight: 300;
-    background-color: #ed017f;
+    background-color: #ed017f; 
     width: 100%;
     height: 80px;
     display: flex;
@@ -108,79 +111,6 @@ body{
     color: #000;
     background-color: #fff;
 }
-/* .categories a{
-    text-decoration: none;
-    color: #fff;
-    margin: 15px;
-}
-.categories a:hover{
-    color: #000;
-    border: 2px solid transparent;
-    background-color: #fff;
-    padding: 5px;
-} */
-
-/* .slider-frame{
-    overflow: hidden;
-    height: 800px;
-    width: 1200px;
-    margin-left: 300px;
-    margin-top: 20px;
-}
-
-@-webkit-keyframes slide_animation{
-    0%{
-        left:1200px;
-    }
-    10%{
-        left:1200px;
-    }
-    20%{
-        left: 1200px;
-    }
-    30%{
-        left: 1200px;
-    }
-    40%{
-        left: 2400px;
-    }
-    50%{
-        left: 2400px;
-    }
-    60%{
-        left: 2400px;
-    }
-    70%{
-        left: 2400px;
-    }
-    80%{
-        left: 2400px;
-    }
-    90%{
-        left: 2400px;
-    }
-    100%{
-        left: 2400px;
-    }
-}
-.slide-img{
-    width: 3600px;
-    height: 800px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
-}
-.img-container{
-    height: 800px;
-    width: 1200px;
-    position: absolute;
-    float: left;
-} */
-
 
 .banner-frame{
     padding: 20px;
@@ -193,6 +123,7 @@ body{
     width: 60%;
 }
 .banner-img img{
+    margin-left: -80px;
     width: 50rem;
     height: 300px;
 }
@@ -230,7 +161,9 @@ body{
     font-size: 15px;
 }
 .newSection{
-    margin-top: -10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin: 20px;
     background-color: #94004f;
     color: #fff;
     width: 100%;
@@ -250,81 +183,144 @@ body{
     font-size: 15px;
 }
 .product{
+    margin-top: -20px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     display: flex;
     border: 2px solid transparent;
-    border-radius: 10px;
-}
-.price-container{
-    display: flex;
 }
 .product-border{
-    padding: 20px;
-    margin: 20px;
+    max-width: 35%;
     border: 2px solid transparent;
-    box-sizing: border-box;
     border-radius: 5px;
+    gap: 20px;
 }
 .product-border:hover{
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    cursor: pointer;
 }
-.product-border img{
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-}
-.price-container{
-    margin: 10px;
-}
-span{
+.product-img{
+    padding: 5px;
     display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
-.nivea{
-    justify-content: center;
+.product-img img{
+    width: 100px;
+    height: 100px;
+}
+.product-img p{
+    padding: 20px;
+    margin-top: 20px;
     font-size: 20px;
-    font-weight: 400;
+    gap: 10px;
+}
+.product-img h3{
+    display: flex;
+    padding-left: 100px;
 }
 .new-price{
-    margin: 20px;
-    font-size: 23px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
 }
 .old-price{
     font-size: 15px;
     text-decoration: line-through;
     color: #666;
 }
-.discount{
-    margin-top: -10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    max-width: 50px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    background-color: #f79595;
+.discount-price{
+    padding: 5px;
     color: red;
 }
-.save-text{
-    justify-content: center;
-    margin-bottom: 10px;
-    color: rgb(12, 85, 12);
-    font-size: 15px;
-    font-weight: 300;
+.product-save{
+    text-align: center;
+    color: rgb(36, 122, 36);
+    font-weight: 800;
 }
-.add{
-    text-decoration: none;
-    color: #ed017f;
-    text-transform: uppercase;
+.product2{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+}
+.product, .product2{
+    margin-left: 20px;
+}
+.official{
+    background-color: #fff;
+    margin: 20px;
+}
+.official p{
+    width: 100%;
+    text-align: center;
+    background-color: #fba100;
+    font-size: 20px;
+    font-weight: 700;
     padding: 10px;
-    justify-content: center;
+}
+.brand-product img{
+    width: 15%;
+    height: 100px;
+    padding: 5px;
+    display: flexbox;
+    margin: 5px;
+    cursor: pointer;
+}
+.best-shopping{
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.best-shopping h1{
+    color: #666;
+    font-size: 40px;
+}
+.best-shopping p{
     font-size: 15px;
-    border: 2px solid #ed017f;
+    color: #666;
+    text-decoration: none;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.best-shopping p a{
+    text-decoration: none;
+}
+.top-deals{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
     background-color: #fff;
 }
-
-.add:hover{
-    background: #ed017f;
-    color: #fff;
+.top-details{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
     cursor: pointer;
+    box-shadow: 5px 10px 30px rgba(53, 46, 46, 0.2);
+}
+
+.top-details img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.top-details h1{
+    font-size: 25px;
+    color: #666;
+    text-transform: uppercase;
+    padding: 40px 5px;
+}
+.top-details p{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
 }
 
